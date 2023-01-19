@@ -6,7 +6,7 @@ We generated the grinding path for hipstem by using CAM (Matercam) and generated
 
 The overall diagram of this project are shown below (to understand this you will need a strong understading in Industrial robot).
 ![Screenshot 2566-01-19 at 18 18 18](https://user-images.githubusercontent.com/106228102/213429143-24b293ab-97de-4ce0-89b0-120d597a84f4.png)
-The right picture is cutting tool in the CNC. The middle one is inversly tranform position from Gcode to robot code. The last one is to reference the end of the robot arm to the robot base.
+"T" represents homogenoeus transformation matrix. The right picture is cutting tool in the CNC. The middle one is inversly tranform position from Gcode to robot code. The last one is to reference the end of the robot arm to the robot base.
 
 Note that: The coordinating system of integrex machine is a mix between euler angle and fix axis 𝑅𝑜𝑡𝑍′(B) ∗ 𝑇𝑟𝑎𝑛𝑠𝑙𝑋′𝑌′𝑍′(𝑋, 𝑌, 𝑍) ∗ 𝑅𝑜𝑡𝑌′(B'). While in fanuc, it used fix angle axis XYZ convention.
 
